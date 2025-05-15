@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { View, Image, Button, TouchableOpacity, Alert } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
-import cameraIcon from '../assets/Group 50.png';
 import { handleFooterImageChange } from '../domain/viewModels/BirthdayScreenViewModel';
 
+
 // ImagePickerComponent allows the user to select an image from the gallery or take a new one with the camera
-const ImagePickerComponent = ({ setImage }) => {  
+const ImagePickerComponent = ({ setImage, cameraIcon }) => {  
 
 // Request permissions for both gallery and camera when the component mounts
 useEffect(() => {

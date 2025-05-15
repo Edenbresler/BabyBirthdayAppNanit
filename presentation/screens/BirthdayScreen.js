@@ -135,11 +135,14 @@ const BirthdayScreen = () => {
             )}
           </View>
 
-          {/* Camera Icon */}
-          <TouchableOpacity style={styles.cameraIcon}>
-            <ImagePickerComponent setImage={handleImageChange} />
-          </TouchableOpacity>
-        </View>
+{/* Camera Icon */}
+<TouchableOpacity style={styles.cameraIcon}>
+    <ImagePickerComponent 
+      setImage={handleImageChange} 
+      cameraIcon={cameraIcon[selectedBackground]} 
+    />
+  </TouchableOpacity>
+</View>
 
 
 
